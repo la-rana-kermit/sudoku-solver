@@ -13,14 +13,17 @@ class Cell:
 
     # METHODS
     # Init methods
-    def __init__ (self, value, x, y):
-        self.value = value
-        self.x = x
-        self.y = y
-        self.sub_x = x % 3
-        self.sub_y = y % 3
-        self.subgrid_x = x // 3
-        self.subgrid_y = y // 3
+    def __init__ (self, value = None, x = None, y = None):
+        if value is not None:
+            self.value = value
+        if x is not None:
+            self.x = x
+            self.sub_x = x % 3
+            self.subgrid_x = x // 3
+        if y is not None:
+            self.y = y
+            self.sub_y = y % 3
+            self.subgrid_y = y // 3
 
     # Print cell attributes
     def printall(self):
