@@ -5,7 +5,7 @@ class Column:
     cells = list()
     x = None
 
-    def __init__(self, x, cells = None):
+    def __init__(self, x = None, cells = None):
         if cells is None:
             self.cells = [Cell(None, None, None) for index in range(9)]
             self.x = x          

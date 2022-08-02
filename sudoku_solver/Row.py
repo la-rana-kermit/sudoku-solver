@@ -5,7 +5,7 @@ class Row:
     cells = list()
     y = None
 
-    def __init__(self, y, cells = None):
+    def __init__(self, y = None, cells = None):
         if cells is None:
             self.cells = [Cell(None, None, None) for index in range(9)]
             self.y = y         
